@@ -11,7 +11,7 @@ function getParameterByName(name, url) {
 $(document).ready(function() {
     $("#download").on("click", function(e) {
         var url = $("#url").val()
-        var id = getParameterByName(url, "id");
+        var id = getParameterByName("id", url);
         if (!id) {
             alert("Invalid Panopto URL!");
             $(this).attr("href", "#");
